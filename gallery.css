@@ -1,0 +1,193 @@
+body {
+  margin: 0px;
+  padding: 0px;
+}
+header nav input {
+  display: none;
+}
+header {
+  width: 100%;
+  background-color: black;
+  background-size: cover;
+}
+header nav {
+  height: inherit;
+  padding: 0px 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+header nav .first img {
+  place-items: center;
+}
+header nav .first i {
+  font-size: 3rem;
+}
+header nav .second ul {
+  padding: 0%;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  gap: 1rem;
+}
+header nav .second ul li a {
+  font-size: 1.3rem;
+  text-decoration: none;
+  color: #ffffff;
+  font-family: "Caudex", serif;
+}
+header nav .burger {
+  display: none;
+}
+main {
+  background-color: #ffffff;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  background-attachment: fixed;
+  width: 100%;
+}
+main .one {
+  width: 100%;
+  display: flex;
+}
+main .one .img {
+  height: 100vh;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-image: url(./assets/images/ad420a_4cf9239236b44010bbc49aa79987fb12_mv2.jpg);
+  position: relative;
+  z-index: 1;
+}
+main .one .text {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  z-index: 2;
+}
+main .one .text span {
+  animation-name: load;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  font-size: 8rem;
+  color: white;
+}
+@keyframes load {
+  from {
+    font-size: 0rem;
+  }
+  to {
+    font-size: 8rem;
+  }
+}
+
+main .hrdiv {
+  height: 15rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+}
+main .hrdiv hr {
+  border: 2px solid black;
+  flex-grow: 1;
+}
+main .hrdiv h1 {
+  color: black;
+  font-size: 2rem;
+}
+main .two {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+main .two .hor,
+main .two .vert {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  gap: 20px;
+}
+main .two .hor div,
+main .two .vert div {
+  background-color: #ffffff;
+  width: 20rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+}
+main .two .hor div img,
+main .two .vert div img {
+  border-radius: 8px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 1), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+  height: 20rem;
+  width: 20rem;
+}
+main .two .hor a,
+main .two .vert a {
+  font-size: 1.5rem;
+  color: black;
+  text-decoration: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+main .two .hor a:hover,
+main .two .vert a:hover {
+  color: blue;
+}
+
+main .two .hor .hordiv,
+main .two .vert .vertdiv {
+  background: #ffffff;
+  width: 44rem;
+  flex-direction: row;
+  line-height: 3rem;
+  gap: 1rem;
+}
+main .two .hor .hordiv img {
+  border-radius: 8px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 1), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+  height: 22rem;
+  width: 32rem;
+}
+main .two .vert .vertdiv video {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 1), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+  width: 44rem;
+}
+main .two .maindiv {
+  margin: 3rem 0px;
+  height: 550px;
+  width: 900px;
+  background-image: url(./assets/images/Cruise-the-cosmos.jpg);
+  background-size: 100% 100%;
+  box-shadow: 0px 8px 10px 2px black;
+  border-radius: 8px;
+  animation: slider 12s infinite linear;
+}
+@keyframes slider {
+  0% {
+    background-image: url(./assets/images/Cruise-the-cosmos.jpg);
+  }
+  40% {
+    background-image: url(./assets/images/crab_nebula2-cxc-ixpe.jpg);
+  }
+  50% {
+    background-image: url(./assets/images/space-galaxies-supernova-core-pulsar-neutron-star-elements-this-image-furnished-by-nasa-retouched-image_559531-2594.jpg);
+  }
+  80% {
+    background-image: url(./assets/images/pia16613_orig.jpg);
+  }
+}
+footer {
+  color: #ffffff;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+}

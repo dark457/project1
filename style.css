@@ -1,0 +1,268 @@
+body {
+  margin: 0px;
+  padding: 0px;
+}
+header {
+  width: 100%;
+  background-color: rgb(0, 0, 0);
+  position: fixed;
+  z-index: 10;
+}
+header nav {
+  padding: 0px 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+header nav .first i {
+  font-size: 3rem;
+}
+header nav .second ul {
+  padding: 0%;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+header nav .second ul li a {
+  font-size: 1.3rem;
+  text-decoration: none;
+  color: #ffffff;
+  font-family: "Caudex", serif;
+}
+header nav input {
+  display: none;
+}
+.burger {
+  display: none;
+}
+main {
+  top: 6rem;
+  position: relative;
+  z-index: 1;
+}
+main .card img {
+  top: 1rem;
+  height: 40rem;
+  width: 90%;
+  object-fit: cover;
+  padding: 0px 5.2rem;
+  z-index: 2;
+  position: absolute;
+}
+main .last .ctext {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 0px 28rem;
+}
+main .top .texta h1,
+main .middle .btext h1,
+main .last .ctext h1 {
+  font-weight: lighter;
+  font-size: 2.6rem;
+}
+main .top .texta p {
+  text-align: justify;
+}
+main.texta p,
+main .middle .btext p,
+main .photo .fd a,
+main .photo .sd a,
+main .photo .thd a,
+main .last .ctext p {
+  font-size: 1.3rem;
+  font-weight: lighter;
+}
+main .middle {
+  display: flex;
+  justify-content: center;
+}
+main .middle .btext {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width: 50%;
+  padding: 2rem;
+  background-color: white;
+  text-align: center;
+  margin-top: 27rem;
+  position: sticky;
+  z-index: 3;
+}
+main .middle .btext button {
+  height: 3rem;
+  background-color: rgb(11, 4, 47);
+  width: 9.2rem;
+  border-color: transparent;
+}
+main .middle .btext button:hover {
+  background-color: #ffffff;
+  border-color: #000000;
+}
+main .middle .btext button a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1rem;
+}
+main .middle .btext a:hover {
+  color: #000000;
+  font-size: 1.3rem;
+}
+main .photo {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  place-items: center;
+}
+main .photo .fd img,
+main .photo .sd img,
+main .photo .thd img {
+  border-radius: 8px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  height: 16rem;
+  width: inherit;
+}
+
+main .photo .fd,
+main .photo .sd,
+main .photo .thd {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  height: 22rem;
+  background-color: #ffffff;
+  width: 27rem;
+  padding: 1rem;
+}
+main .photo .fd a,
+main .photo .sd a,
+main .photo .thd a {
+  color: #000000;
+  text-decoration: none;
+  font-family: "Oswald", sans-serif;
+  font-weight: 500;
+}
+main .photo .fd a:hover,
+main .photo .sd a:hover,
+main .photo .thd a:hover {
+  color: darkblue;
+  font-size: 1.4rem;
+}
+main .paralax {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width: 100%;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  place-items: center;
+  margin-left: 4rem;
+  height: 38rem;
+  width: 93%;
+  background-image: url(./assets/images/ad420a_09dccc8140d043d4964f34bb8c813c53_mv2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-attachment: fixed;
+}
+main .bottom {
+  width: 100%;
+  display: grid;
+  place-items: center;
+  gap: 5rem;
+}
+main .bottom h1 {
+  width: 30%;
+  display: grid;
+  text-align: center;
+  font-family: "Oswald", sans-serif;
+  font-size: 2rem;
+  font-weight: 400;
+  color: darkblue;
+}
+main .bottom .auth label {
+  font-size: 1.1rem;
+}
+main .bottom .auth form input {
+  width: 23rem;
+  height: 2rem;
+}
+main .bottom .auth form button {
+  width: 10rem;
+  height: 2.3rem;
+  cursor: pointer;
+  border-width: thin;
+  background-color: #ffffff;
+  font-size: 1.1rem;
+}
+main .bottom .auth form button a {
+  text-decoration: none;
+  color: #000000;
+}
+main .bottom .auth form button:hover {
+  font-size: 1.3rem;
+}
+main .bottom .adress {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 2rem;
+}
+main .bottom .adress a,
+main p {
+  text-decoration: none;
+  line-height: 1.8rem;
+  font-size: 20px;
+  color: #000000;
+}
+main p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .hrdiv,
+main .last .hrdiv {
+  height: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+}
+main .hrdiv hr,
+main .last .hrdiv hr {
+  flex-grow: 1;
+  border: 2px solid black;
+}
+main .hrdiv h1,
+main .last .hrdiv h1 {
+  font-weight: 100;
+  font-size: 2rem;
+}
+#mySidenav a {
+  position: absolute;
+  left: -89px;
+  transition: 0.3s;
+  padding: 15px;
+  width: 100px;
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  border-radius: 0 5px 5px 0;
+}
+
+#mySidenav a:hover {
+  left: 0;
+}
+
+#about {
+  top: 6rem;
+  background-color: darkgreen;
+}
+
+#blog {
+  top: 10rem;
+  background-color: darkblue;
+}
+
+#projects {
+  top: 14rem;
+  background-color: darkred;
+}
+
+#contact {
+  top: 18rem;
+  background-color: darkslategray;
+}

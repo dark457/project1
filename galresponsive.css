@@ -1,0 +1,90 @@
+@media screen and (max-width: 370px) {
+  header nav .burger {
+    display: flex;
+    justify-content: end;
+    font-size: 4rem;
+    color: #ffffff;
+  }
+  header nav input {
+    display: none;
+  }
+  header nav .second {
+    height: 100%;
+    width: 100%;
+    background-image: url(./assets/images/photo-1528818955841-a7f1425131b5.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: fixed;
+    top: 6rem;
+    left: 0%;
+    z-index: 15;
+    display: none;
+  }
+  header nav #check:checked ~ .second {
+    display: block !important;
+  }
+  header nav .second ul {
+    align-items: center;
+    flex-direction: column;
+    gap: 3rem;
+  }
+  header nav .second ul li a {
+    font-size: 4rem;
+  }
+  header nav .second ul li a:active {
+    font-size: 3.1rem;
+  }
+}
+@media screen and (max-width: 1497px) {
+  header nav input {
+    display: none;
+  }
+}
+@media screen and (max-width: 1480px) {
+  html {
+    display: grid;
+  }
+  main .one {
+    justify-content: center;
+  }
+  main .one .text span {
+    font-weight: 100;
+    font-size: 5rem;
+  }
+}
+@media screen and (max-width: 780px) {
+  main .one .text span {
+    display: none;
+  }
+}
+@media screen and (max-width: 370px) {
+  main .hrdiv {
+    width: inherit;
+    height: auto;
+  }
+  main .two .hor .hordiv {
+    flex-direction: column;
+    width: 36rem;
+  }
+  main .two .hor a {
+    line-height: 3rem;
+    font-size: 1.8rem;
+  }
+  main .two .hor .hordiv img {
+    width: 36rem;
+  }
+  main .two {
+    align-items: center;
+  }
+  main .two .hor {
+    gap: 2rem;
+    flex-direction: columndis;
+  }
+  main .two .hor div {
+    width: 23rem;
+  }
+  main .two .hor div img {
+    height: 22rem;
+    width: 23rem;
+  }
+}

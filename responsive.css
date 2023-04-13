@@ -1,0 +1,140 @@
+@media screen and (max-width: 370px) {
+  header nav .burger {
+    display: flex;
+    justify-content: end;
+    font-size: 4rem;
+    color: #ffffff;
+  }
+  header nav input {
+    display: none;
+  }
+  header nav .second {
+    height: 100%;
+    width: 100%;
+    background-image: url(./assets/images/photo-1528818955841-a7f1425131b5.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: fixed;
+    top: 6rem;
+    left: 0%;
+    z-index: 15;
+    display: none;
+  }
+  header nav #check:checked ~ .second {
+    display: block !important;
+  }
+  header nav .second ul {
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  header nav .second ul li a {
+    font-size: 3rem;
+  }
+  header nav .second ul li a:active {
+    font-size: 3.1rem;
+  }
+}
+@media screen and (max-width: 1410px) {
+  main .photo {
+    gap: 2rem;
+  }
+}
+@media screen and (max-width: 1350px) {
+  html {
+    display: grid;
+  }
+  header nav .second .sidenav {
+    display: none;
+  }
+  main .paralax {
+    margin: 0rem;
+  }
+  main .last {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  main .last .ctext {
+    padding: 0px 2.9rem;
+  }
+  main .last .ctext p {
+    font-size: 2rem;
+    text-align: justify;
+  }
+  main .middle .btext p {
+    font-size: 1.7rem;
+    text-align: justify;
+  }
+  main .bottom .auth label {
+    font-size: 1.6rem;
+  }
+}
+@media screen and (max-width: 370px) {
+  main {
+    position: inherit;
+  }
+  main .card img {
+    width: 66rem;
+    padding: 0px;
+  }
+  main .middle .btext h1 {
+    margin-block-end: 0rem;
+  }
+  main .middle .btext {
+    box-shadow: 0px 0px 0 rgba(0, 0, 0, 0), 0 0px 0px 0 rgba(0, 0, 0, 0);
+    width: 100%;
+    text-align: justify;
+    margin-top: 41rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  main .middle .btext button {
+    height: 4rem;
+    width: 15rem;
+  }
+  main .last .hrdiv hr {
+    display: none;
+  }
+  main .hrdiv h1,
+  main .last .hrdiv h1 {
+    font-size: 3rem;
+  }
+  main .middle .btext button a {
+    font-size: 1.7rem;
+  }
+  main .last .hrdiv h1 {
+    margin-block-end: 0px;
+  }
+  main .last .ctext h1 {
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+  }
+  main .photo {
+    padding: 0px 2rem;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  main .photo .fd,
+  main .photo .sd,
+  main .photo .thd {
+    height: 50rem;
+    width: 60rem;
+  }
+  main .photo .fd img,
+  main .photo .sd img,
+  main .photo .thd img {
+    height: auto;
+    width: inherit;
+  }
+  main .photo .fd a,
+  main .photo .sd a,
+  main .photo .thd a {
+    font-size: 3rem;
+  }
+  main .paralax {
+    margin-left: 0rem;
+    width: 91%;
+  }
+}
